@@ -1,0 +1,16 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Set the base URL
+RewriteBase /essect_clubs/
+
+# Redirect to the index.php file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# Prevent access to sensitive files
+<FilesMatch "\.(ini|log|htaccess|env)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
