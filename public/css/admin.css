@@ -1,0 +1,176 @@
+/* 
+ * ESSECT Clubs - Admin CSS
+ * Styling for the administration section
+ */
+
+/* Admin header styles */
+.admin-header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .admin-header h1 {
+    margin-bottom: 0;
+    color: #212529;
+  }
+  
+  /* Dashboard cards */
+  .admin-card {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .admin-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .admin-card .card-header {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* Stat cards */
+  .stat-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-card .card-title {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .stat-card .display-4 {
+    color: #0d6efd;
+    font-weight: 700;
+  }
+  
+  /* Tables styling */
+  .admin-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-table thead th {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 12px 15px;
+  }
+  
+  .admin-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .admin-table tbody tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  .admin-table td {
+    padding: 12px 15px;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  /* Action buttons */
+  .btn-action {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 4px;
+  }
+  
+  .btn-approve {
+    background-color: #198754;
+    border-color: #198754;
+    color: white;
+  }
+  
+  .btn-reject {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+  }
+  
+  /* Chart containers */
+  .chart-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .chart-container h5 {
+    color: #212529;
+    margin-bottom: 15px;
+  }
+  
+  /* Application details */
+  .application-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .application-details dt {
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .application-details dd {
+    margin-bottom: 10px;
+  }
+  
+  /* Admin sidebar (for future expansion) */
+  .admin-sidebar {
+    background-color: #212529;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100%;
+  }
+  
+  .admin-sidebar .nav-link {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
+  .admin-sidebar .nav-link:hover,
+  .admin-sidebar .nav-link.active {
+    background-color: #0d6efd;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .admin-header {
+      padding: 15px;
+    }
+    
+    .admin-table {
+      font-size: 0.875rem;
+    }
+    
+    .admin-table td,
+    .admin-table th {
+      padding: 8px 10px;
+    }
+  }
